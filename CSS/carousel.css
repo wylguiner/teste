@@ -1,0 +1,450 @@
+body {
+  padding-top: 0px;
+}
+
+a {
+    color: green;
+}
+
+/* Navbar customização */
+  .navbar.navbar-light {
+    padding: 10px 0;
+    border: 0;
+    background-color: transparent;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+  }
+
+/* Navbar Título */
+  .navbar .navbar-brand {
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: green;
+    text-shadow: 2px 2px white;
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;   
+  }
+
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-brand:focus,
+  .navbar .navbar-brand:active,
+  .navbar .navbar-brand.active {
+    color: #44de60;  
+  }
+
+/* Navbar Itens */
+  .navbar .navbar-nav .nav-item a{
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+
+  .navbar .navbar-nav .nav-item a:hover,
+  .navbar .navbar-nav .nav-item a:focus{
+    outline: 0;
+    color: #44de28;
+  }
+
+    .navbar.navbar-shrink {
+        padding: 10px 0;
+        background-color: #222;
+    }
+
+    .navbar.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+
+/*Navbar Botão Toggle */
+  .navbar .navbar-toggler {
+    border-color: green;
+    background-color: green;
+    margin-right: 7px;
+  }
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+/* Navbar tela pequena */
+  @media(max-width:768px) {
+    .navbar .navbar-brand {
+      margin-left: 10px;   
+    } 
+
+    .navbar.navbar-light {
+      background-color: #222;
+      border-color: transparent;
+      padding: 0px;
+    }
+
+    .navbar .navbar-nav .nav-item a{
+      text-align: center;
+    }
+  }
+
+/* Cabeçalho Customização */
+  header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url('../IMG/BG-final.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+/* Cabeçalho Textos */
+  header .intro-text {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+/* Cabeçalho Bem Vindo */
+  header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+  }
+
+/* Cabeçalho Explicação */
+  header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
+/* Cabeçalho Parágrafo */
+  header .intro-text .intro-paragraph {
+    margin-bottom: 30px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+
+/* Cbeçalho Divisória */
+  header .intro-text hr {
+    background-color: white;
+  }
+
+/* Cabeçalho Tela Pequena */
+  @media(max-width:768px) {
+    header .intro-text {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+
+/* Cabeçalho Bem Vindo Tela Pequena */
+  header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 20px;
+  }
+
+/* Cabeçalho Explicação Tela Pequena */
+  header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+/* Cabeçalho Parágrafo Tela Pequena */
+  header .intro-text .intro-paragraph {
+    margin-bottom: 30px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+}
+
+/* Seção Serviços */
+  section {
+    padding: 80px 0;
+  }
+
+/* Seção Título */
+  section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+  }
+
+/* Seção Sub-Título */
+  section h3.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+/* Seção Sub-Título 2 */
+  section h3.section-subheading2 {
+      margin-bottom: 75px;
+      text-transform: none;
+      font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 400;
+      color: white;
+}
+
+/* Seção tela pequena */
+  @media(max-width:768px) {
+    .detalhes {
+      margin-bottom: 16px;
+    }
+
+/* Seção Sub-Título Tela Pequena */
+    section h3.section-subheading {
+      margin-bottom: 25px;
+    }
+
+/* Seção Sub-Título 2 Tela Pequena */
+    section h3.section-subheading2 {
+      margin-bottom: 25px;
+    }
+  }
+
+/* Serviços Título */
+  .service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
+/* Modals Customizados */
+  .portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+/* Modals Títulos */
+  .portfolio-modal .modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 3em;
+  }
+
+/* Modasl Parágrafos */
+  .portfolio-modal .modal-content p {
+    margin-bottom: 30px;
+  }
+
+/* Modals Itens */
+  .portfolio-modal .modal-content p.item-intro {
+    margin: 20px 0 30px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+  }
+
+/* Modal X de fechar */
+  .portfolio-modal .close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .portfolio-modal .close:hover {
+    opacity: .3;
+  }
+
+/* Modals Títulos Tela Pequena */
+  @media(max-width:768px) {
+    .portfolio-modal .modal-content h2 {
+      margin-bottom: 15px;
+      font-size: 2em;
+    }
+  }
+
+/* Clientes Customizados */
+  aside.clientes img {
+    margin: 50px auto;
+  }
+
+/* Clientes Customizados Tela Pequena */
+  @media(max-width:768px) {
+    aside.clientes {
+      text-align: center;
+    }
+    aside.clientes img {
+      margin: 20px auto;
+    }
+  }
+
+/* Contato Customizado */
+  section#contato {
+    background-color: #222;
+    background-image: url(../img/grass.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+/* Contato Título */
+  section#contato .section-heading {
+    color: #fff;
+  }
+
+/* Contato Formulário */
+  section#contato .form-group {
+    margin-bottom: 19px;
+  }
+
+/* Contato Itens Formulário */
+  section#contato .form-group input,
+  section#contato .form-group textarea {
+    padding: 20px;
+  }
+  section#contato .form-group input.form-control {
+      height: auto;
+  }
+  section#contato .form-group textarea.form-control {
+      height: 236px;
+}
+
+/* Contato Tela Pequena */
+  @media(max-width:768px) {
+    section#contato .form-group textarea.form-control {
+      height: 100px;
+    }
+  }
+
+/* Contato Mais Customização */
+  section#contato .form-control:focus {
+      border-color: #44de28;
+      box-shadow: none;
+  }
+  section#contato::-webkit-input-placeholder {
+      text-transform: uppercase;
+      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-weight: 700;
+      color: #bbb;
+  }
+  section#contact:-moz-placeholder {
+      text-transform: uppercase;
+      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-weight: 700;
+      color: #bbb;
+  }
+  section#contact::-moz-placeholder {
+      text-transform: uppercase;
+      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-weight: 700;
+      color: #bbb;
+  }
+  section#contact:-ms-input-placeholder {
+      text-transform: uppercase;
+      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-weight: 700;
+      color: #bbb;
+  }
+  section#contact .text-danger {
+      color: #e74c3c;
+  }
+
+/* Rodapé Customizado */
+  footer {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+/* Rodapé Copyright */
+  footer span.copyright {
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+  }
+
+/* Rodapé Links Rápidos */
+  footer ul.quicklinks {
+      margin-bottom: 0;
+      text-transform: uppercase;
+      text-transform: none;
+      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      line-height: 40px;
+  }
+
+/* Rodapé Redes Sociais */ 
+  ul.social-buttons {
+      margin-bottom: 0;
+  }
+  ul.social-buttons li a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      font-size: 20px;
+      line-height: 40px;
+      outline: 0;
+      color: #fff;
+      background-color: #222;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      transition: all .3s;
+  }
+  ul.social-buttons li a:hover,
+  ul.social-buttons li a:focus,
+  ul.social-buttons li a:active {
+      background-color: green;
+  }
+
+#titulo {
+  margin-top: 100px;
+}
+
+
+
+ 
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#formularioCadastro {
+  margin-top: 50px;
+}
