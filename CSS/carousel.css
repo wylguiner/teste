@@ -410,7 +410,14 @@ a {
   }
 
 #titulo {
-  margin-top: 100px;
+  margin-top: 80px;
+  font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+  color: green;
+}
+
+#subtitulo {
+  font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+  color: green;
 }
 
 
@@ -419,7 +426,7 @@ a {
 .form-signin {
   width: 100%;
   max-width: 330px;
-  margin: auto;
+  margin: 80px auto;
 }
 .form-signin .checkbox {
   font-weight: 400;
