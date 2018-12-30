@@ -48,27 +48,35 @@
     <h1 class="h3 mb-3 font-weight-normal" align="center" id="subtitulo">Cadastro de Estudantes</h1>
         <form id="formularioCadastro">  
             <div class="form-row">
-                <div class="form-group col-md-8">
+                <div class="form-group col-md-6">
                     <label for="Nome">Nome Completo</label>
-                    <input type="email" class="form-control" id="Nome" placeholder="Digite seu nome completo aqui">
+                    <input type="name" class="form-control" id="Nome" placeholder="Digite seu nome completo aqui">
                 </div>
                 <div class="form-group col-md-4">
+                    <label for="Nome">Email</label>
+                    <input type="email" class="form-control" id="Email" placeholder="Digite seu email aqui">
+                </div>
+                <div class="form-group col-md-2">
                     <label for="DataNascimento">Data de Nascimento</label>
-                    <input type="password" class="form-control" id="DataNascimento" placeholder="Digite sua data de nascimento">
+                    <input type="password" class="form-control" id="DataNascimento" placeholder="01/12/1234">
                 </div>
             </div>
             <div class="form-row">
-                <div class="form-group col-md-4 col">
+                <div class="form-group col-md-3">
+                    <label for="Telefone">Senha</label>
+                    <input type="password" class="form-control" id="Senha" placeholder="Digite sua senha">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="Telefone">Confirme a Senha</label>
+                    <input type="password" class="form-control" id="Senha2" placeholder="Digite sua senha novamente">
+                </div>                
+                <div class="form-group col-md-3 col">
                     <label for="Telefone">Telefone</label>
                     <input type="text" class="form-control" id="Telefone" placeholder="(12) 1234-5678">
                 </div>
-                <div class="form-group col-md-4 col">
+                <div class="form-group col-md-3 col">
                     <label for="Celular">Celular</label>
                     <input type="text" class="form-control" id="Celular" placeholder="(12) 12345-6789">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="Telefone 2">Outro telefone</label>
-                    <input type="text" class="form-control" id="Telefone 2" placeholder="(12) 1234-5678">
                 </div>
             </div>    
             <div class="form-row">
@@ -80,31 +88,35 @@
                     <label for="Numero">Número</label>
                     <input type="text" class="form-control" id="Numero" placeholder="Digite o número">
                 </div>
-                <div class="form-group col-md-4">
-                    <label for="Cidade">Ciade</label>
+                <div class="form-group col-md-4 ">
+                    <label for="Numero">Endereço</label>
+                    <input type="text" class="form-control" id="Endereco" disabled>
+                </div>  
+                <div class="form-group col-md-4 ">
+                    <label for="Numero">Complemento</label>
+                    <input type="text" class="form-control" id="Complemento" placeholder="Digite algum complemento">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-3 col">
+                    <label for="Cidade">Cidade</label>
                     <input type="text" class="form-control" id="Cidade" disabled>
                 </div>
                 <div class="form-group col-md-2 col">
                     <label for="Estado">Estado</label>
                     <input type="text" class="form-control" id="Estado" disabled>
                 </div>                
-                <div class="form-group col-md-2 col">
-                    <label for="País">País</label>
-                    <input type="text" class="form-control" id="País" disabled>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-4">
                     <label for="exampleFormControlSelect1">Qual Instituição pretende estudar?</label>
                     <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Fatec Taubaté</option>
-                    <option>Fatec Pindamonhangaba</option>
-                    <option>Unitau</option>
-                    <option>Anhanguera Taubaté</option>
-                    <option>Etec Taubaté</option>
+                        <option>Fatec Taubaté</option>
+                        <option>Fatec Pindamonhangaba</option>
+                        <option>Unitau</option>
+                        <option>Anhanguera Taubaté</option>
+                        <option>Etec Taubaté</option>
                     </select>
                 </div>
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-3">
                     <label for="exampleFormControlSelect1">Qual período?</label>
                     <select class="form-control" id="exampleFormControlSelect1">
                     <option>Manhã</option>
