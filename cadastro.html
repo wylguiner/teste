@@ -46,69 +46,69 @@
     <div class="container">
     <h1 class="h3 mb-3 font-weight-normal" align="center" id="titulo">Sistema Unificado de Informação de Transportes</h1>
     <h1 class="h3 mb-3 font-weight-normal" align="center" id="subtitulo">Cadastro de Estudantes</h1>
-        <form id="formularioCadastro">  
+        <form method="POST" action="cadastro_processo.php" id="formularioCadastro">  
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="Nome">Nome Completo</label>
-                    <input type="name" class="form-control" id="Nome" placeholder="Digite seu nome completo aqui">
+                    <input type="name" name="nome" class="form-control" id="Nome" placeholder="Digite seu nome completo aqui">
                 </div>
                 <div class="form-group col-md-4">
-                    <label for="Nome">Email</label>
-                    <input type="email" class="form-control" id="Email" placeholder="Digite seu email aqui">
+                    <label for="Email">Email</label>
+                    <input type="email" name="email" class="form-control" id="Email" placeholder="Digite seu email aqui">
                 </div>
                 <div class="form-group col-md-2">
                     <label for="DataNascimento">Data de Nascimento</label>
-                    <input type="password" class="form-control" id="DataNascimento" placeholder="01/12/1234">
+                    <input type="date" name="nascimento"class="form-control" id="DataNascimento">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-3">
-                    <label for="Telefone">Senha</label>
-                    <input type="password" class="form-control" id="Senha" placeholder="Digite sua senha">
+                    <label for="Senha">Senha</label>
+                    <input type="password" name="senha1" class="form-control" id="Senha" placeholder="Digite sua senha">
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="Telefone">Confirme a Senha</label>
-                    <input type="password" class="form-control" id="Senha2" placeholder="Digite sua senha novamente">
+                    <label for="ConfirmaSenha">Confirme a Senha</label>
+                    <input type="password" name="senha2" class="form-control" id="Senha2" placeholder="Digite sua senha novamente">
                 </div>                
                 <div class="form-group col-md-3 col">
                     <label for="Telefone">Telefone</label>
-                    <input type="text" class="form-control" id="Telefone" placeholder="(12) 1234-5678">
+                    <input type="text" name="telefone" class="form-control" id="Telefone" placeholder="(12) 1234-5678">
                 </div>
                 <div class="form-group col-md-3 col">
                     <label for="Celular">Celular</label>
-                    <input type="text" class="form-control" id="Celular" placeholder="(12) 12345-6789">
+                    <input type="text" name="celular" class="form-control" id="Celular" placeholder="(12) 12345-6789">
                 </div>
             </div>    
             <div class="form-row">
                 <div class="form-group col-md-2 col">
                     <label for="CEP">CEP</label>
-                    <input type="text" class="form-control" id="CEP" placeholder="12345-678">
+                    <input type="text" name="cep" class="form-control" id="CEP" placeholder="12345-678">
                 </div>
                 <div class="form-group col-md-2 col">
                     <label for="Numero">Número</label>
-                    <input type="text" class="form-control" id="Numero" placeholder="Digite o número">
+                    <input type="number" name="numero" class="form-control" id="Numero" placeholder="Digite o número">
                 </div>
                 <div class="form-group col-md-4 ">
-                    <label for="Numero">Endereço</label>
-                    <input type="text" class="form-control" id="Endereco" disabled>
+                    <label for="Endereço">Endereço</label>
+                    <input type="text" name="endereco" class="form-control" id="Endereco"   >
                 </div>  
                 <div class="form-group col-md-4 ">
-                    <label for="Numero">Complemento</label>
-                    <input type="text" class="form-control" id="Complemento" placeholder="Digite algum complemento">
+                    <label for="Complemento">Complemento</label>
+                    <input type="text" name="complemento" class="form-control" id="Complemento" placeholder="Digite algum complemento">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-3 col">
                     <label for="Cidade">Cidade</label>
-                    <input type="text" class="form-control" id="Cidade" disabled>
+                    <input type="text" name="cidade" class="form-control" id="Cidade"   >
                 </div>
                 <div class="form-group col-md-2 col">
                     <label for="Estado">Estado</label>
-                    <input type="text" class="form-control" id="Estado" disabled>
+                    <input type="text" name="estado" class="form-control" id="Estado"   >
                 </div>                
                 <div class="form-group col-md-4">
-                    <label for="exampleFormControlSelect1">Qual Instituição pretende estudar?</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <label for="escola">Qual Instituição pretende estudar?</label>
+                    <select class="form-control" name="escola" id="escola">
                         <option>Fatec Taubaté</option>
                         <option>Fatec Pindamonhangaba</option>
                         <option>Unitau</option>
@@ -117,8 +117,8 @@
                     </select>
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="exampleFormControlSelect1">Qual período?</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <label for="periodo">Qual período?</label>
+                    <select class="form-control" name="periodo" id="periodo">
                     <option>Manhã</option>
                     <option>Tarde</option>
                     <option>Noite</option>
@@ -129,7 +129,7 @@
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck">
                     <label class="form-check-label" for="gridCheck">
-                    Eu aceito todos os <u>TERMOS DE COMPROMISSO</u>
+                        Eu aceito todos os <u>TERMOS DE COMPROMISSO</u>
                     </label>
                 </div>
             </div>
