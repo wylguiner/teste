@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -44,19 +48,29 @@
     </nav>
 
     <div class="container ">
-        <form class="form-signin">
+        <form method="POST" action="login.php" class="form-signin">
             <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
             <h1 class="h3 mb-3 font-weight-normal text-center">Entre, por favor</h1>
             <label for="inputEmail" class="sr-only">E-mail</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="E-mail" required autofocus>
+            <input type="email" id="inputEmail" name="email" class="form-control" placeholder="E-mail" required autofocus>
             <label for="inputPassword" class="sr-only">Senha</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+            <input type="password" id="inputPassword" name="senha" class="form-control" placeholder="Senha" required>
             <div class="checkbox mb-3">
                 <label>
                     <input type="checkbox" value="remember-me"> Me lembre
                 </label>
             </div>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+            <?php
+                if(isset($_SESSION['nao_autenticado'])):
+            ?>
+            <div class="alert alert-danger" role="alert" style="margin-top: 10px; text-align: center;">
+                Usuário ou senha inválida!!!
+            </div>
+            <?php
+                endif;
+                unset($_SESSION['nao_autenticado']);
+            ?>
             <p class="mt-5 mb-3 text-muted text-center">&copy; 2018-2019</p>
         </form>
     </div>

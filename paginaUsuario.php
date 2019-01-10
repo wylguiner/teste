@@ -1,3 +1,8 @@
+<?php
+session_start();
+include('verifica_login.php')
+?> 
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -28,10 +33,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <span class="navbar-text" style="color: white";>
-                        Olá
+                        Olá <?php echo $_SESSION['nome']; ?> <!-- Puxa a sessão -->
                     </span>
                     <li class="nav-item">
-                        <a class="nav-link" href="#infos">Sair</a>
+                        <a class="nav-link" href="logout.php">Sair</a>
                     </li>
                 </ul>
             </div>
@@ -53,19 +58,11 @@
                 </li>
               </ul>
               <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    
-                    
-                    
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">       
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-
-
-
                 </div>
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                    
-
                 </div>
               </div>
         </div>

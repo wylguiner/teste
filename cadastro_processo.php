@@ -1,5 +1,7 @@
 <?php 
  
+include('conexao.php');
+
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $nascimento = $_POST['nascimento'];
@@ -15,12 +17,6 @@ $cidade = $_POST['cidade'];
 $estado = $_POST['estado'];
 $escola = $_POST['escola'];
 $periodo = $_POST['periodo'];
-
-$server = "localhost";
-$usuario = "root";
-$pass = "";
-$dbname = "suit";
-$conn = mysqli_connect($server,$usuario,$pass,$dbname);
 
 
   if($senha1 == $senha2){
