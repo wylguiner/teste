@@ -48,25 +48,93 @@ include('verifica_login.php')
         <div class="container">
             <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Dados</a>
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#dados" role="tab" aria-controls="home" aria-selected="true">Dados</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Transportes</a>
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#transportes" role="tab" aria-controls="profile" aria-selected="false">Transportes</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Mensagens</a>
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#mensagens" role="tab" aria-controls="contact" aria-selected="false">Mensagens</a>
                 </li>
               </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">       
+              <div class="tab-content" id="myTabContent"> <!-- Conteúdo das TABS --> 
+                <div class="tab-pane fade show active" id="dados" role="tabpanel" aria-labelledby="home-tab"> <!-- Conteúdo da TAB 1 -->    
+                    <form method="POST" action="cadastro_processo.php" id="">  
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="Nome">Nome Completo</label>
+                                <input type="name" name="nome" class="form-control" id="Nome" value="<?php echo $_SESSION['nome']?>">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="Email">Email</label>
+                                <input type="email" name="email" class="form-control" id="Email" value="<?php echo $_SESSION['email']?>">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="DataNascimento">Data de Nascimento</label>
+                                <input type="date" name="nascimento"class="form-control" id="DataNascimento" value="<?php echo $_SESSION['nascimento']?>">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="Senha">Nova Senha</label>
+                                <input type="password" name="senha1" class="form-control" id="Senha" placeholder="Digite sua nova senha">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="ConfirmaSenha">Confirme a Nova Senha</label>
+                                <input type="password" name="senha2" class="form-control" id="Senha2" placeholder="Digite sua nova senha novamente">
+                            </div>                
+                            <div class="form-group col-md-3 col">
+                                <label for="Telefone">Telefone</label>
+                                <input type="text" name="telefone" class="form-control" id="Telefone" value="<?php echo $_SESSION['telefone']?>">
+                            </div>
+                            <div class="form-group col-md-3 col">
+                                <label for="Celular">Celular</label>
+                                <input type="text" name="celular" class="form-control" id="Celular" value="<?php echo $_SESSION['celular']?>">
+                            </div>
+                        </div>    
+                        <div class="form-row">
+                            <div class="form-group col-md-2 col">
+                                <label for="CEP">CEP</label>
+                                <input type="text" name="cep" class="form-control" id="CEP" value="<?php echo $_SESSION['cep']?>">
+                            </div>
+                            <div class="form-group col-md-2 col">
+                                <label for="Numero">Número</label>
+                                <input type="number" name="numero" class="form-control" id="Numero" value="<?php echo $_SESSION['numero']?>">
+                            </div>
+                            <div class="form-group col-md-4 ">
+                                <label for="Endereço">Endereço</label>
+                                <input type="text" name="endereco" class="form-control" id="Endereco" value="<?php echo $_SESSION['endereco']?>"  >
+                            </div>  
+                            <div class="form-group col-md-4 ">
+                                <label for="Complemento">Complemento</label>
+                                <input type="text" name="complemento" class="form-control" id="Complemento" value="<?php echo $_SESSION['complemento']?>">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3 col">
+                                <label for="Cidade">Cidade</label>
+                                <input type="text" name="cidade" class="form-control" id="Cidade" value="<?php echo $_SESSION['cidade']?>">
+                            </div>
+                            <div class="form-group col-md-2 col">
+                                <label for="Estado">Estado</label>
+                                <input type="text" name="estado" class="form-control" id="Estado" value="<?php echo $_SESSION['estado']?>">
+                            </div>                
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg" id="botao">Cadastrar</button>
+                    </form>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="tab-pane fade" id="transportes" role="tabpanel" aria-labelledby="profile-tab">
+                    teste 2
                 </div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="tab-pane fade" id="mensagens" role="tabpanel" aria-labelledby="contact-tab">
+                    teste3
                 </div>
               </div>
         </div>
     </section>
+
+
+    
 
    
     <!-- Footer --> 
